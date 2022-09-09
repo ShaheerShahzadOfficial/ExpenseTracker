@@ -1,0 +1,87 @@
+@import url('bulma/css/bulma.css');
+@import url('material-design-icons/iconfont/material-icons.css');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Nav{
+    display: grid;
+  grid-template-columns: 60% 40%;
+  /* padding-top: 20px; */
+  margin-left: auto;
+  margin-right: auto;
+  top: 20px;
+  width:95%;
+  /* box-shadow: 0 0 6px rgba(0, 0, 0, 0.644); */
+  margin-top: 1vmax;
+  padding-top: 1vmax;
+  margin-bottom : 1vmax;
+  padding-bottom: 1vmax;
+  padding-left: 1vmax;
+
+}
+
+.btnContainer{
+    padding-left:50px;
+    width:100%;
+    display:flex
+}
+
+.homeHeading{
+    text-align: center;
+    /* font-family: serif; */
+    font-size: 2vmax;
+    border-bottom: 2px solid rgba(21, 21, 21, 0.7);
+    width: 20vmax;
+    padding: 1vmax;
+margin: 2vmax auto;
+color: rgba(0, 0, 0, 0.85);
+}
+
+.Expenses{
+    /* justify-content: center; */
+    display: flex;
+    margin: 2vmax;
+    width: 90%;
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin: 2vmax auto;
+}
+
+.Expenses > .Box{
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.644);
+        margin-top: 4vmax;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    /* flex-wrap: wrap;
+    width: 40%;
+    padding: 10px; */
+}
+.Expenses > .Box > div{
+    margin: 1vmax;
+}
+.Img{
+    height:100% !important;
+}
+@media screen and (max-width: 850px) {
+    .Nav{
+        display: grid;
+      grid-template-columns: 30% 70%;
+      grid-gap: 10px;
+      padding: 10px;
+      /* text-align: center */
+      top: 0;
+    }
+}

@@ -1,0 +1,130 @@
+.Div {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  background-color: rgba(228, 226, 226, 0.74);
+}
+.ImageDiv {
+  background-color: transparent !important;
+  margin-top: 10vh;
+}
+.FormContainer {
+  width: 100%;
+  margin-top: 10vh;
+  height: 90vh;
+}
+
+.FormContainer > form > h1 {
+  color: rgba(0, 0, 0, 0.733);
+  font: 300 2rem "Roboto";
+  text-align: center;
+  margin: 0;
+}
+
+.SignInForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  padding: 1vmax;
+  justify-content: space-evenly;
+  height: 80%;
+  width: 70vh;
+  background-color: white;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.377);
+}
+
+.SignInForm > div {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+.SignInForm > div > input {
+  padding: 1.1vmax 4vmax;
+  padding-right: 1vmax;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.267);
+  border-radius: 4px;
+  font: 500 1.6vmax cursive;
+  outline: none;
+}
+
+.SignInForm > div > svg {
+  position: absolute;
+  transform: translateX(1vmax);
+  font-size: 2vmax;
+  color: rgba(0, 0, 0, 0.723);
+}
+
+#SignInFormFile > input {
+  display: flex;
+  padding: 0%;
+}
+
+#signInbtn {
+  border: none;
+  background-color: blue;
+  color: white;
+  width: 100%;
+  padding: 1vmax;
+  cursor: pointer;
+  transition: all 0.5s;
+  border-radius: 4px;
+  outline: none;
+  font: 600 1.8vmax;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.219);
+  /* border-radius: 0px; */
+}
+
+#signInbtn:hover {
+  background-color: darkblue;
+}
+
+.Redirect {
+  margin: 0.3vmax;
+  font: 300 1.6vmax "Roboto";
+  color: black;
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+@media screen and (max-width: 600px) {
+  .FormContainer {
+    width: 80%;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+  }
+  .SignInForm {
+    padding: 5vmax;
+    width: 100%;
+  }
+
+  .SignInForm > div > input,
+  .SignInForm > div > select {
+    padding: 2.5vmax 5vmax;
+    font: 300 1.7vmax cursive;
+  }
+
+  .SignInForm > div > svg {
+    font-size: 2.8vmax;
+  }
+
+  #signInbtn {
+    font: 300 1.9vmax "Roboto";
+    padding: 2vmax;
+  }
+
+  .Redirect {
+    margin: 0.3vmax;
+    font: 900 1.6vmax "Roboto";
+    color: red;
+    cursor: pointer;
+  }
+  a {
+    text-decoration: none;
+    color: red;
+  }
+}

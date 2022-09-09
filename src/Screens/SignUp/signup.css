@@ -1,0 +1,130 @@
+.mainContainer{
+    display: flex;
+flex-direction: column;
+text-align: center;
+align-items: center;
+justify-content: center;
+margin-bottom:-10vmax;
+padding-bottom: 20vmax;
+}
+
+
+.subContainer{
+    margin-top: 1vmax;
+/* margin-bottom: 5vmax; */
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+border: 3px solid black;
+margin-bottom: 5vmax;
+
+}
+
+.subContainer >h2{
+    color: rgba(0, 0, 0, 0.75);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.300);
+    width: 50%;
+    margin-right: auto;
+    margin-bottom: 2vmax;
+
+    margin-left: auto;
+}
+
+.formController{
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+}
+
+
+
+input::placeholder{
+    color: black;
+font: bold 1.4vmax ;
+}
+
+.formController > button {
+    margin-bottom: 5vmax;
+    cursor: pointer;
+background-color: blue;
+    border: 2px solid white;
+    border-radius: 0;
+padding:1vmax ;
+width: 90%;
+font: 500 1.5vmax "Roboto";
+color: white;
+
+}
+
+
+.formController > div > svg{
+    position: absolute;
+    font-size: 1.6vmax;
+    margin-top: 1vmax;
+    margin-left: 1vmax;
+    margin-bottom: 1vmax;
+    align-items: center;
+    color: black;
+    }
+
+    .Redirect{
+        margin: 0.3vmax;
+    font: 300 1.6vmax "Roboto";
+    color: black;
+    cursor: pointer;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+    }
+
+.formController > div > input{
+    padding: 1vmax 4vmax;
+    padding-right: 1vmax;
+    width: 90%;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.267);
+    border-radius: 4px;
+    font: 600 1.2vmax cursive;
+    outline: none;
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .formController > div > input{
+        font: 400 1.5vmax cursive;
+        width: 90%;
+    }
+
+    .subContainer{
+        margin-top: 8vmax;
+    /* margin-bottom: 5vmax; */
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+    border: 3px solid black;
+    }
+
+    button {
+    padding:1.3vmax ;
+    width: 9vmax;
+    font: 500 1.4vmax "Roboto";
+    }
+
+
+    .formController > div > svg{
+        font-size: 2vmax;
+margin: 1.5vmax;
+    }
+
+
+
+}
